@@ -1,0 +1,49 @@
+*Opentutorials Java Note*
+
+Static - Class
+Non Static - Instance
+
+Interface - Blueprint of Class
+
+Declaration:
+(Access Level Modifiers) (Static?) (Type) "Name"
+
+"Class" => a papaerbag for {variables and methods}:members
+Class : bread mold, Instance : Bread
+
+executing (compiled) class: execute main func. of *public* class whose name is equal to filename
+
+static reference to non-static field(var/met) is *prohibited*
+
+static members are shared throughout a class and instances.
+non-static(instance) members exist independently.
+
+----
+
+Interface - i don't care about the back of the interface.
+
+Constructor - A constructor is a *special method* which defines initial state of new instance.
+	
+	In Code: A constructor is a block of codes similar to the method, with no access-level/static/type, and with the identical name as the class within.
+	
+	In Inheritance : When creating a (instance of) subclass, you're creating a superclass at the same time. thus, the constructor of the subclass must include the constructor of its superclass, otherwise the compiler will implicitly call no-arg constructor of superclass (if not explicitly called by the user).
+
+----
+
+Overloading(과적) - You can provide two or more separated methods with the same name but different arguments. Overloading methods can be made from varing 'Method Signature', which is made of a number, types, and order of arguments. The output type can be varied in terms of a variation of arguments.
+
+Overriding(덮어쓰기) - In object-oriented languages, it's allowed for a subclass or child class to specifically implement a method that is already provided by (one of) its super-classes. pratically, if a method of a subclass has the same name, parameters, and return type as a method of its superclass, than the method in the subclass overrides the method in the superclasses.
+
+----
+
+further topics(to be filled)-
+
+Polymorphism(다형성): 자식을 부모로서 작동하게(?)
+
+Access modifiers(접근 제어자): 여기까지만 접근해, 너 이거는 건들지마 public/default/protected/private
+
+Final(최종): 더이상 건들지 마
+
+Abstract: 이건 꼭 구현해
+
+// 22-06-19 @sciberbee
